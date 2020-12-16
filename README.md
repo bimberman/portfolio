@@ -1,6 +1,6 @@
 # Portfolio
 
-A web page to showcase my work
+A web page that showcases my work
 
 ## Technologies used
 
