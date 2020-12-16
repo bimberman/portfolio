@@ -26,4 +26,8 @@ Try the application live at: [benimberman.com](https://benimberman.com)
     git clone https://github.com/bimberman/portfolio.git
     cd portfolio
     ```
-2. Open the index.html 
+2. Open the index.html file
+    ```shell
+    Windows command: index.html
+    Windows Bash: start index.html
+    ```
