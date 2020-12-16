@@ -1,6 +1,6 @@
 # Portfolio
 
-A front-end web application to showcase my work
+A web page to showcase my work
 
 ## Technologies used
 
