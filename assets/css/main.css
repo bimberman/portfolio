@@ -2692,8 +2692,9 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		border-top: #dfdfdf solid 1px;
-		border-bottom: #dfdfdf solid 1px;
+		border-top: #dfdfdf solid 2px;
+		border-bottom: #dfdfdf solid 2px;
+		background-color: rgba(29, 36, 42, 0.9);
 	}
 
 		.spotlight .image {
@@ -2731,51 +2732,7 @@ input, select, textarea {
 			-webkit-flex-direction: row-reverse;
 			-ms-flex-direction: row-reverse;
 			flex-direction: row-reverse;
-		}
-
-		.spotlight:nth-child(1) {
-			background-color: rgba(0, 0, 0, 0.075);
-		}
-
-		.spotlight:nth-child(2) {
-			background-color: rgba(0, 0, 0, 0.15);
-		}
-
-		.spotlight:nth-child(3) {
-			background-color: rgba(0, 0, 0, 0.225);
-		}
-
-		.spotlight:nth-child(4) {
-			background-color: rgba(0, 0, 0, 0.3);
-		}
-
-		.spotlight:nth-child(5) {
-			background-color: rgba(0, 0, 0, 0.375);
-		}
-
-		.spotlight:nth-child(6) {
-			background-color: rgba(0, 0, 0, 0.45);
-		}
-
-		.spotlight:nth-child(7) {
-			background-color: rgba(0, 0, 0, 0.525);
-		}
-
-		.spotlight:nth-child(8) {
-			background-color: rgba(0, 0, 0, 0.6);
-		}
-
-		.spotlight:nth-child(9) {
-			background-color: rgba(0, 0, 0, 0.675);
-		}
-
-		.spotlight:nth-child(10) {
-			background-color: rgba(0, 0, 0, 0.75);
-		}
-
-		.spotlight:nth-child(1n) {
 			background-color: rgba(255,255,255,1);
-			/* background-color: rgba(29, 36, 42, 0.9); */
 		}
 
 		@media screen and (max-width: 1280px) {
@@ -3996,6 +3953,12 @@ input, select, textarea {
 	.project-title, .project-text{
 		padding: 0;
 		margin: 0;
+		color: #fff;
+	}
+
+	.project-title.color,
+	.project-text.color,
+	.project-icon.color{
 		color: #2e3842;
 	}
 
@@ -4008,7 +3971,7 @@ input, select, textarea {
 	}
 
 	.project-icon{
-		color: #2e3842;
+		color: #fff;
 	}
 
 	.project-icon:hover{
