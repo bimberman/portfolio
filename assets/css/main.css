@@ -2100,11 +2100,16 @@ input, select, textarea {
 			color: #76ddff;
 		}
 
-		[skills] {
+		[skills], [tools] {
 			color: #2e3842;
 			font-size: 5rem;
 			width: 5rem;
 			height: auto;
+			transition: transform 3s ease-out;
+		}
+
+		.icon:hover {
+			transform: translate(0, -10px);
 		}
 
 /* Image */
@@ -2687,6 +2692,8 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
+		border-top: #dfdfdf solid 1px;
+		border-bottom: #dfdfdf solid 1px;
 	}
 
 		.spotlight .image {
@@ -2701,6 +2708,12 @@ input, select, textarea {
 			.spotlight .image img {
 				border-radius: 0;
 				width: 100%;
+			}
+
+			.spotlight .image.portrait img {
+				margin: auto;
+				width: auto;
+				max-height: 30rem;
 			}
 
 		.spotlight .content {
@@ -2758,6 +2771,11 @@ input, select, textarea {
 
 		.spotlight:nth-child(10) {
 			background-color: rgba(0, 0, 0, 0.75);
+		}
+
+		.spotlight:nth-child(1n) {
+			background-color: rgba(255,255,255,1);
+			/* background-color: rgba(29, 36, 42, 0.9); */
 		}
 
 		@media screen and (max-width: 1280px) {
@@ -3320,7 +3338,7 @@ input, select, textarea {
 			}
 
 		.wrapper.style6 {
-			background-color: rgba(251,251,251,1);
+			background-color: rgba(255,255,255,1);
 		}
 
 			.wrapper.style6 strong, .wrapper.style6 b {
@@ -3365,6 +3383,10 @@ input, select, textarea {
 
 			.icons.style6 {
 				color: #2e3842;
+			}
+
+			.icon.style6:hover {
+				color:rgba(97, 95, 95,0.5);
 			}
 
 			.wrapper.style7 {
@@ -3898,10 +3920,10 @@ input, select, textarea {
 
 	#main > header {
 		padding: 12em 0 10em 0 ;
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0)), url("../../images/banner.jpg");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0)), url("../../images/banner.jpg");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0)), url("../../images/banner.jpg");
+		background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0)), url("../../images/banner.jpg");
 		background-attachment: fixed;
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -3971,9 +3993,10 @@ input, select, textarea {
 		margin: 0;
 	}
 
-	.project-title{
+	.project-title, .project-text{
 		padding: 0;
 		margin: 0;
+		color: #2e3842;
 	}
 
 	.project-title.travelwise{
@@ -3982,6 +4005,14 @@ input, select, textarea {
 		letter-spacing: 0;
 		font-weight: 300;
 		font-size: 1.75em;
+	}
+
+	.project-icon{
+		color: #2e3842;
+	}
+
+	.project-icon:hover{
+		color:rgba(97, 95, 95,0.5);
 	}
 
 /* Footer */
