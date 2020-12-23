@@ -2010,6 +2010,10 @@ input, select, textarea {
 		text-decoration: none;
 		border-bottom: none;
 		position: relative;
+		-moz-transition: all 0.5s ease;
+		-webkit-transition: all 0.5s ease;
+		-ms-transition: all 0.5s ease;
+		transition: transform 0.5s ease;
 	}
 
 		.icon:before {
@@ -2325,6 +2329,10 @@ input, select, textarea {
 		cursor: default;
 		list-style: none;
 		padding-left: 0;
+		-moz-transition: all 0.5s ease;
+		-webkit-transition: all 0.5s ease;
+		-ms-transition: all 0.5s ease;
+		transition: transform 0.5s ease;
 	}
 
 		ul.icons li {
@@ -2332,16 +2340,19 @@ input, select, textarea {
 			padding: 0 1em 0 0;
 		}
 
-			ul.icons li:last-child {
+			/* ul.icons li:last-child {
 				padding-right: 0 !important;
-			}
+			} */
 
 		ul.icons.major {
 			padding: 1em 0;
+			max-width: 900px;
+			margin: auto;
 		}
 
 			ul.icons.major li {
-				padding-right: 3.5em;
+				padding-left: 1.7em;
+				padding-right: 1.7em;
 			}
 
 				@media screen and (max-width: 736px) {
@@ -2732,7 +2743,7 @@ input, select, textarea {
 			-webkit-flex-direction: row-reverse;
 			-ms-flex-direction: row-reverse;
 			flex-direction: row-reverse;
-			background-color: rgba(255,255,255,1);
+			/* background-color: rgba(255,255,255,1); */
 		}
 
 		@media screen and (max-width: 1280px) {
